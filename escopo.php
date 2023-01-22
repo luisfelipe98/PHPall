@@ -6,7 +6,7 @@
 // Escopo local, global e static
 
 // Escopo local
-// É um escopo definido dentro de uma função
+// É um escopo definido DENTRO de uma função
 // Não é acessível fora desta função
 // Quando a função é finalizada, o valor da variável é RESETADO
 
@@ -15,9 +15,42 @@ echo "O valor da variável FORA da função é " . $x . "<br>";
 
 function escopoLocal(){
     $x = 9.1;
-    echo "O valor da variável DENTRO da função é " . $x . "<br>";
+    echo "O valor da variável LOCAL DENTRO da função é " . $x . "<br>";
 }
 
-escopoLocal(); // Chamando a função para exibir seu resultado
+escopoLocal() . "<br>"; // Chamando a função para exibir seu resultado
+echo "O valor da variável DEPOIS de passar pela função é " . $x . "<br>";
 
+// Escopo Global
+// São variáveis declaradas FORA da função
+// Precisamos por a palavra GLOBAL antes da variável para utiliza-la
+// Por padrão, ela NÃO É ACESSADA dentro de uma função
+
+$teste = "Camisa";
+echo "Variável no global é " . $teste . "<br>";
+
+if (true){
+    $teste = "Roupa";
+    echo "Variável no if é " . $teste . "<br>";
+}
+
+echo "Variável DEPOIS do if é " . $teste . "<br>";
+// Neste caso o if ALTERA O VALOR da variável
+// Agora
+// Chamando uma variável GLOBAL DENTRO DE UMA FUNÇÃO E ALTERANDO SEU RESULTADO 
+
+$teste = "Jeans";
+echo "Variável no global é " . $teste . "<br>";
+
+function escopoGlobal(){
+    global $teste; // Transformando em uma variável global
+    $teste = "Shorts";
+    echo "Variável GLOBAL alterada DENTRO da função é " . $teste . "<br>";
+}
+
+escopoGlobal() . "<br>"; 
+echo "Variável GLOBAL DEPOIS da função é " . $teste . "<br>";
+
+// Conclusão
+// Uma função PODE ALTERAR VALOR DE UMA VARIÁVEL GLOBAL se você transforma-la em GLOBAL
 ?>
