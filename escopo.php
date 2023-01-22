@@ -53,4 +53,33 @@ echo "Variável GLOBAL DEPOIS da função é " . $teste . "<br>";
 
 // Conclusão
 // Uma função PODE ALTERAR VALOR DE UMA VARIÁVEL GLOBAL se você transforma-la em GLOBAL
+
+// Escopo Static
+// São variáveis de escopo LOCAL mantendo seu valor depois da função ser utilizada
+// O padrão é RESETAR, mas o static MANTÉM o valor da variável
+// Usamos a palavra static antes da variável
+// Por manter o resultado, conseguimos utiliza-la em MAIS DE UMA FUNÇÃO
+
+function teste(){
+    $a = 0;
+    $a++; // Adicionando 1 ao valor da variável
+    echo "Valor da variável é " . $a . "<br>";
+}
+
+teste() . "<br>";
+teste() . "<br>";
+
+// Não continuou adicionando e manteve o resultado inicial
+
+function staticTeste(){
+    static $a = 0; // Tranformando em uma variável static
+    $a++; 
+    echo "Valor da variável é " . $a . "<br>";
+}
+
+staticTeste() . "<br>";
+staticTeste() . "<br>";
+staticTeste() . "<br>";
+
+// A variável manteve o resultado e continuou somando
 ?>
