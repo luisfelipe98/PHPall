@@ -2,8 +2,8 @@
 
 // Escopo de variáveis
 // É um jeito de não embaralhar suas variáveis
-// Escopo tem 3 tipos
-// Escopo local, global e static
+// Escopo tem 4 tipos
+// Escopo local, global, static e parâmetros de uma função
 
 // Escopo local
 // É um escopo definido DENTRO de uma função
@@ -82,4 +82,18 @@ staticTeste() . "<br>";
 staticTeste() . "<br>";
 
 // A variável manteve o resultado e continuou somando
+
+// Parâmetros de uma função
+// Cria funções com valores dinâmicos
+
+function soma($n1, $n2){
+    $soma = $n1 + $n2; // Utilizando os parâmetros
+    echo "O valor de " . $n1 . " + " . $n2 . " é " . $soma . "<br>";
+}
+
+// Chama a função passando os parâmetros
+soma(3, 8);
+soma(23, 18);
+soma(3.89, 4.7);
+soma(1.1, 9.9);
 ?>
