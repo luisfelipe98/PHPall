@@ -72,12 +72,12 @@ $num1 = 111;
 $num2 = 111;
 $num3 = 110;
 
-// Exemplo de maior
+// Exemplo de menor
 if ($num3 < $num1) {
     echo $num1 . " é menor que " . $num3 . "<br>";
 }
 
-// Exemplo de maior ou igual
+// Exemplo de menor ou igual
 if ($num1 <= $num2) {
     echo $num1 . " é menor ou igual que " . $num2 . "<br>";
 }
