@@ -33,7 +33,22 @@ if ($n1 == 10) {
 }
 
 // Exemplo de diferença
-if ($n2 != 10) {
+if ($n2 != $n1) {
     echo "Os números são diferentes <br>";
+}
+
+// Exemplo de operador de idêntico a e não idêntico a
+$num1 = 40;
+$num2 = 40;
+$num3 = "40"; 
+
+// Exemplo de idêntico a
+if ($num1 === $num2) {
+    echo "Estes números são idênticos <br>";
+}
+
+// Exemplo de não idêntico a
+if ($num1 !== $num3) {
+    echo "Estes dados não são idênticos <br>";
 }
 ?>
