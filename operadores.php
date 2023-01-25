@@ -66,4 +66,19 @@ if ($num3 > $num1) {
 if ($num1 >= $num2) {
     echo $num1 . " é maior ou igual que " . $num2 . "<br>";
 }
+
+// Exemplo de operador de menorr e menor igual que
+$num1 = 111;
+$num2 = 111;
+$num3 = 110;
+
+// Exemplo de maior
+if ($num3 < $num1) {
+    echo $num1 . " é menor que " . $num3 . "<br>";
+}
+
+// Exemplo de maior ou igual
+if ($num1 <= $num2) {
+    echo $num1 . " é menor ou igual que " . $num2 . "<br>";
+}
 ?>
