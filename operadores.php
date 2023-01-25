@@ -51,4 +51,19 @@ if ($num1 === $num2) {
 if ($num1 !== $num3) {
     echo "Estes dados não são idênticos <br>";
 }
+
+// Exemplo de operador de maior e maior igual que
+$num1 = 555;
+$num2 = 555;
+$num3 = 556;
+
+// Exemplo de maior
+if ($num3 > $num1) {
+    echo $num1 . " é maior que " . $num3 . "<br>";
+}
+
+// Exemplo de maior ou igual
+if ($num1 >= $num2) {
+    echo $num1 . " é maior ou igual que " . $num2 . "<br>";
+}
 ?>
