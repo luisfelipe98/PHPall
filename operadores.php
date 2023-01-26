@@ -81,4 +81,48 @@ if ($num3 < $num1) {
 if ($num1 <= $num2) {
     echo $num1 . " é menor ou igual que " . $num2 . "<br>";
 }
+
+// Operadores de atribuição
+// Principal função é atribuir valores em uma variável
+// São estes operadores: =, +=, -=, *=, /= e %=
+// Eles fazem a operação antes de atribuir valores (Tirando o =)
+
+//Operador +=
+$n = 0;
+$n += 10; // $n = $n + 10
+
+echo $n . "<br>";
+
+//Operador -=
+$n = 0;
+$n -= 10; // $n = $n - 10
+
+echo $n . "<br>";
+
+//Operador *=
+$n = 1;
+$n *= 10; // $n = $n * 10
+
+echo $n . "<br>";
+
+//Operador /=
+$n = 1;
+$n /= 10; // $n = $n / 10
+
+echo $n . "<br>";
+
+//Operador %=
+$n = 15;
+$n %= 10; // $n = $n % 10
+
+echo $n . "<br>";
+
+// Operador ternário
+// Estrutura de condição resumida
+// Usamos o ? e : para separar as ordens
+
+// Exemplo
+echo 20 > 2 ? "Deu verdadeiro <br>" : "Deu falso <br>";
+
+echo 20 < 2 ? "Deu verdadeiro <br>" : "Deu falso <br>";
 ?>
