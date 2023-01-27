@@ -25,7 +25,7 @@ if ($a % $b != $c) {
     echo "Deu certo! Entrou dentro do if de variáveis <br>";
 }
 
-// Para a exibição de uma condição FALSA denro do if, podemos adicionar o comando ELSE
+// Para a exibição de uma condição FALSA dentro do if, podemos adicionar o comando ELSE
 // A estrutura do ELSE é OPCIONAL
 
 // Exemplos
