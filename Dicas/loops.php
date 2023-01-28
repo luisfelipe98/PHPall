@@ -54,21 +54,18 @@ echo "<br><br><br>";
 
 echo "Loop com o Do While <br> <br>";
 
-$cont = 0;
-$array = [40,75,3,1,990,150,435,7,19,13,33,871,24,555];
-
-$tamArray = count($array);
+$cont = 1;
 
 do {
-    if ($array[$cont] % 2 === 0) {
-        echo $array[$cont] . " é par <br>";
+    if ($cont === 1) {
+        echo "Passando pelo loop " . $cont ." vez <br>";
         $cont++;
-    } else {
-        echo $array[$cont] . " é impar <br>";
-        $cont++;
-    }
+    } 
+    
+    echo "Passando pelo loop " . $cont ." vezes <br>";
+    $cont++;
 
-} while ($cont < $tamArray);
+} while ($cont <= 10);
 
 echo "<br>";
 echo "Saiu do loop do do while";
