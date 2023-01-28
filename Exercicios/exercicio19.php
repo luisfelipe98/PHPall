@@ -9,7 +9,6 @@ $cont = count($array) - 1;
 
 while ($cont >= 0 ) {
     if ($array[$cont] === 60 || $array[$cont] === 30) {
-        echo "Comando Continue no número " . $array[$cont] . "<br>";
         $cont--;
         continue;
     }
