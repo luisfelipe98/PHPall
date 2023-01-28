@@ -9,9 +9,32 @@
 
 // Exemplos
 
+// Exemplo de Break e Continue
+// Um loop decrementado com Break no 1 e Continue 3 e 6
+
+echo "Loop com Break e Continue <br> <br>";
+$cont = 10;
+
+while ($cont != 0) {
+    if ($cont === 1) {
+        echo $cont . " - Sair do loop com o break <br>";
+        break;
+    } else if ($cont === 3 || $cont === 6) {
+        echo $cont . " - Comando continue <br>";
+        $cont--;
+        continue;
+    } else {
+        echo "Passando pelo loop número " . $cont . "<br>";
+        $cont--;
+    }
+}
+echo "<br>";
+echo "Saiu do loop com Break e Continue";
+echo "<br><br><br>";
+
 // While
 
-echo "Loop com o While <br>";
+echo "Loop com o While <br> <br>";
 
 $cont = 1;
 
@@ -24,7 +47,9 @@ while ($cont != 11) {
     echo "Passando pelo loop " . $cont ." vezes <br>";
     $cont++;
 }
+echo "<br>";
 echo "Saiu do loop do while <br>";
+echo "<br> <br> <br>";
 
 
 
@@ -80,7 +105,7 @@ echo "Saiu do loop do while <br>";
 // É bom cada um ter seu contador
 // Cuidado com os loops infinitos
 
-echo "Loop Alinhado <br>";
+echo "Loop Alinhado <br> <br>";
 $cont1 = 1; // 1º contador
 $qtdeExe = 1; // Contador para descobrir quantas execuções de todos os loops
 while ($cont1 <= 10) {
