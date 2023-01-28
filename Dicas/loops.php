@@ -71,9 +71,21 @@ echo "<br>";
 echo "Saiu do loop do do while";
 echo "<br><br><br>";
 
+// For
 
+echo "Loop com For <br> <br>";
 
+for ($i = 1; $i <=10; $i++) {
+    if ($i === 1) {
+        echo "Passando pelo loop " . $i . " vez <br>";
+    } else {
+        echo "Passando pelo loop " . $i . " vezes <br>";
+    }
+}
 
+echo "<br>";
+echo "Saiu do loop do for";
+echo "<br><br><br>";
 
 
 
