@@ -5,6 +5,7 @@
 // Comandos break e/ou continue são utilizados neles
 // Comando break serve para sair de um loop
 // Comando Continue serve para pular uma execução do loop
+// SEMPRE INCREMENTAR OU DECREMENTAR ANTES DE UM CONTINUE
 // Sempre utilizar um contador para não virar loop infinito
 
 // Exemplos
