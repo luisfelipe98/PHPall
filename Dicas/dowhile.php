@@ -3,7 +3,7 @@
 // Do while é uma estrutura de repetição
 // Pouco utilizado
 // A sintaxe é invertida comparada com o while
-// Ela pe mais "lógica", no sentido de quem está lendo o código
+// Ela é mais "lógica", no sentido de quem está lendo o código
 
 // Exemplos
 
