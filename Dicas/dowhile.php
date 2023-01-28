@@ -35,7 +35,6 @@ echo "<br><br><br>";
         echo "Testando do while com break e continue " . $i . "<br>";
         $i++;
     }
-    
  } while ($i <= 10);
 
 ?>
