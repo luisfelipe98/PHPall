@@ -18,10 +18,8 @@ $cont = 10;
 
 while ($cont != 0) {
     if ($cont === 1) {
-        echo $cont . " - Sair do loop com o break <br>";
         break;
     } else if ($cont === 3 || $cont === 6) {
-        echo $cont . " - Comando continue <br>";
         $cont--;
         continue;
     } else {
@@ -49,8 +47,8 @@ while ($cont != 11) {
     $cont++;
 }
 echo "<br>";
-echo "Saiu do loop do while <br>";
-echo "<br> <br> <br>";
+echo "Saiu do loop do while";
+echo "<br><br><br>";
 
 
 
