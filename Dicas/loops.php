@@ -87,49 +87,6 @@ echo "<br>";
 echo "Saiu do loop do for";
 echo "<br><br><br>";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Loop Alinhado
 // São loop dentro de outro loop
 // É bom cada um ter seu contador
