@@ -11,4 +11,11 @@ include "teste.php";
 include "cabecalho.html";
 include "logica.php";
 
+// include_once só faz o include UMA VEZ para evitar a repetição de código
+// É o mais indicado
+
+// Exemplos
+include_once "../Exercicios/exercicio1.php";
+include_once "../Exercicios/exercicio15.php";
+
 ?>
