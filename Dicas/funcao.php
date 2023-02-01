@@ -55,4 +55,11 @@ function subtracao ($n1 = 0, $n2 = -2) {
 echo subtracao() . "<br>";
 echo subtracao(7) . "<br>";
 
+function soma3 ($n1, $n2 = -2) {
+    return $n1 + $n2;
+}
+
+echo soma3(7,8) . "<br>";
+echo soma3(4) . "<br>";
+
 ?>
