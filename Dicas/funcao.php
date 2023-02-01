@@ -77,4 +77,16 @@ function soma4 ($n1, $n2) {
 
 soma4(1,2);
 
+// Retornar mais de um dado na função
+// É só por os dados em forma de array
+
+function alteraDados($nome, $idade) {
+    $nome = "Sr. " . $nome;
+    $idade = $idade . " anos";
+    return [$nome, $idade];
+}
+
+$dados = alteraDados("Luis", 24);
+
+echo "Olá " . $dados[0] . ", você tem " . $dados[1] . "<br>";
 ?>
