@@ -181,4 +181,15 @@ $stringLower = "caracteres minusculos";
 echo "Invertendo " . $stringUpper . " para " . strtolower($stringUpper) . "<br>";
 echo "Invertendo " . $stringLower . " para " . strtoupper($stringLower) . "<br>";
 
+// Mais duas funções para alterar case de palavras
+// Ucfirst e Ucwords
+// Ucfirst deixa maiúsculo a PRIMEIRA LETRA DA STRING
+// UCwords deixa maiúsculo a PRIMEIRA LETRA DE CADA PALAVRA DA STRING
+// Exemplos
+
+$string1 = "testando se a primeira letra da frase ficará maiúscula";
+$string2 = "testando se a primeira letra de cada palavra ficará maiúscula";
+
+echo ucfirst($string1) . "<br>";
+echo ucwords($string2) . "<br>";
 ?>
