@@ -20,4 +20,13 @@ soma();
 // Função Própria do PHP
 echo strtoupper("testando função") . "<br>";
 
+// Parâmetros são variavéis para moldar sua execução dentro de sua função
+
+function soma2($n1, $n2) {
+    $soma = $n1 + $n2;
+    echo $n1 . " + " . $n2 . " = " . $soma;
+}
+
+// Chamando a função com parâmetro
+soma2(55,6) . "<br>";
 ?>
