@@ -37,4 +37,19 @@
  }else{
     echo $texto . " não é string <br>";
  }
+
+// Manipulação de Strings
+
+// Interpolação de Strings
+// Pode ser feito em duas formas
+// Dentro de "" ou em {}
+
+// Exemplos
+$teste = "teste";
+
+echo "Interpolando variável em aspas duplas $teste <br>";
+echo "Interpolando variável em chaves {$teste} <br>";
+
+// Ambas não tem diferença em questão de performance
+
 ?>
