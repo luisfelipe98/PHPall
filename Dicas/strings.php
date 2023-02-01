@@ -52,4 +52,16 @@ echo "Interpolando variável em chaves {$teste} <br>";
 
 // Ambas não tem diferença em questão de performance
 
+// Valores de escape
+// É obrigatório utilizar "" (aspas duplas)
+/* Exemplos
+   \n = nova linha
+   \t = tab
+   \\ = barra invertida
+   \$ = símbolo do dolar
+   etc
+*/ 
+
+// É bem utilizado em sistemas que respondem com o PHP
+// É utilizado em sistemas de texto puro, não tem necessidade se for na Web
 ?>
