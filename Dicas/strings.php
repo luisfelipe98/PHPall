@@ -92,6 +92,7 @@ printf("A temperatura está em %.1f ºC <br>", $temperatura);
 
 // Função Strlen
 // Serve para mostrar a quantidade de caracteres de uma string
+// CONTA ESPAÇO EM BRANCO
 // Retorna um valor int
 
 $string1 = "Esta string é muito grande";
@@ -99,4 +100,26 @@ $string2 = "Esta não";
 
 echo "A 1ª string tem " . strlen($string1) . " caracteres <br>";
 echo "A 2ª string tem " . strlen($string2) . " caracteres <br>";
+
+// Percorendo uma String
+// Fazer uma estrutura de repetição 
+// Exemplo
+
+$string = "Quantidade de caracteres de uma string";
+$tamString = strlen($string);
+
+$cont = 0;
+while ($cont < $tamString) {
+   if ($tamString - 1 === $cont ) { 
+      echo $string[$cont] . " <br>";
+      $cont++;
+   } else if ($string[$cont] === " ") {
+      echo "- ";
+      $cont++;
+   } else {
+      echo $string[$cont] . " ";
+      $cont++;
+   }   
+}
+
 ?>
