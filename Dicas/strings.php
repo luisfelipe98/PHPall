@@ -167,4 +167,18 @@ for ($i = 0; $i < strlen($cleanString3); $i++) {
 }
 echo "<br>";
 
+// Alterando o case das palavras
+// Seria por as palavras com todos os caracteres maiúsculos ou minúsculos
+// Para isso, tem duas funções
+// Strtolower e strtoupper
+// Strtolower deixa todos os caracteres minúsculos
+// Strtoupper deixa todos os caracteres maiúsculos
+// Exemplos
+
+$stringUpper = "CARACTERES MAIUSCULOS";
+$stringLower = "caracteres minusculos";
+
+echo "Invertendo " . $stringUpper . " para " . strtolower($stringUpper) . "<br>";
+echo "Invertendo " . $stringLower . " para " . strtoupper($stringLower) . "<br>";
+
 ?>
