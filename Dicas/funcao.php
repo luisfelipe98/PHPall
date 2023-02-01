@@ -43,4 +43,16 @@ $n1 = 88;
 $n2 = 4;
 $divisao = divisao($n1, $n2);
 echo "O resultado da divisão entre " . $n1 . " e " . $n2 . " é " . $divisao . "<br>";
+
+// Parâmetro Default
+// É um parâmetro que entrará em cena caso não for passado o valor do parâmetro na invocação da função
+// Boa pratica é deixar os valores default por último 
+
+function subtracao ($n1 = 0, $n2 = -2) {
+    return $n1 - $n2;
+}
+
+echo subtracao() . "<br>";
+echo subtracao(7) . "<br>";
+
 ?>
