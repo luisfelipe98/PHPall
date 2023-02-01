@@ -4,11 +4,11 @@
 // Deve conter nome e preço
 // Retornar items que custam mais de R$ 10
 
-function items($carro) {
+function itensCaros($itens) {
     $resultado = [];
-    foreach ($carro as $index => $item) {
-        if ($item > 10) {
-            array_push($resultado, $index);
+    foreach ($itens as $item => $preço) {
+        if ($preço > 10) {
+            array_push($resultado, $item);
         }
     }
     return $resultado;
@@ -23,13 +23,16 @@ $carro = [
           "rodas" => 800
          ];
 
-$resultado = items($carro);
+$resultado = itensCaros($carro);
 $tamArray = count($resultado);
 
-if ($tamArray > 1) {
-    echo "Os produtos acima de R$ 10 são: ";
+if ($tamArray === 0) {
+    echo "Nenhum produto acima de R$ 10";
+    die();
+} else if ($tamArray === 1) {
+    echo "O produto acima de R$ 10 é: ";   
 } else {
-    echo "O produto acima de R$ 10 é: ";
+    echo "Os produtos acima de R$ 10 são: ";
 }
 
 $cont = 0;
