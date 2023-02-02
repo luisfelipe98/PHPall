@@ -25,4 +25,24 @@ echo "<br>";
 $arr = ["Luis", 0, true];
 print_r($arr);
 
+// Adicionando dados no Array manualmente
+
+$array = [];
+
+// Adicionando três itens nesse array vazio
+$array[0] = 45;
+$array[1] = "Layla";
+$array[2] = "José";
+
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+
+// Substituindo o array manualmente
+$array[1] = "Camila"; // Mudei o valor do índice 1
+
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+
 ?>
