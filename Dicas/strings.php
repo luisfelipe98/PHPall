@@ -219,4 +219,13 @@ $minhaString2 = substr($string, 8, -3); // Vai tirar três caracteres do FINAL d
 
 echo $minhaString2 . "<br>";
 
+// Função Strrev
+// Inverte a string
+// Exemplo
+
+$string = "palavra";
+$stringReversa = strrev($string);
+
+echo "A palavra \"" . $string . "\" invertida é " . $stringReversa . "<br>";
+
 ?>
