@@ -59,7 +59,7 @@ echo "</pre>";
 // Criando array rapidamente
 // Usando a função range()
 // Nesta função colaca-se os ELEMNETOS de forma automática
-// Range(elemento inicial, elemento final)
+// Range(elemento inicial, elemento final, [step = incremento ou decremento])
 // Exemplo
 
 $array = range(1, 10); // Elementos de 1 a 10 no array
@@ -67,5 +67,13 @@ $array = range(1, 10); // Elementos de 1 a 10 no array
 echo "<pre>";
 print_r($array);
 echo "</pre>";
+
+// Função count
+// Serve para descobrir a quantidade de elementos do array
+// Retorna um valor int
+// Exemplo
+
+$array = range(1, 100, 3);
+echo "O array tem " . count($array) . " elementos <br>";
 
 ?>
