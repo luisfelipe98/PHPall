@@ -8,6 +8,26 @@ $array = ['nome' => 'Shark', 'patas' => 4, 'cor' => 'marrom'];
 
 print_r($array);
 echo "<br>";
-echo $array['nome'];
+echo $array['nome'] . "<br>";
+
+// Adicionando dados no Array associativo manualmente
+
+$array = [];
+
+// Adicionanado três elementos nesse array
+$array["carro"] = "Jetta";
+$array["moto"] = "Yamaha";
+$array["fruta"] = "Maça";
+
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+
+// Substituindo o array manualmente
+$array["carro"] = "BMW"; // Mudei o valor do índice carro
+
+echo "<pre>";
+print_r($array);
+echo "</pre>";
 
 ?>
