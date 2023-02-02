@@ -231,10 +231,24 @@ echo "A palavra \"" . $string . "\" invertida é " . $stringReversa . "<br>";
 // Função Str_repeat
 // Serve para repetir uma string n vezes
 // Str_repeat(string, quantidade de repetições)
+// Exemplo
 
 $string = "php";
 $stringRepetida = str_repeat($string,5);
 
 echo $stringRepetida . "<br>";
+
+// Função Explode
+// Serve para converter uma string em array
+// explode(separador da string, string)
+// O delimitador PRECISA EXISTIR NA STRING, SENÃO VIRA ARRAY DE UMA FRASE
+// Exemplo
+
+$string = "O programador tava sem tempo para fazer o sistema";
+$stringParaArray = explode(" ", $string);
+
+echo "<pre>";
+print_r($stringParaArray);
+echo "</pre> <br>";
 
 ?>
