@@ -45,4 +45,15 @@ echo "<pre>";
 print_r($array);
 echo "</pre>";
 
+// Adicionando dados no fim do array
+// É só NÃO ESPECIFICAR O ÍNDICE, pois irá já para o último lugar do array
+// Exemplos
+
+$array[] = "João"; // Assim é adicionado após o último item do array
+$array[] = "Natália";
+
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+
 ?>
