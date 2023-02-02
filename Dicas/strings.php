@@ -228,4 +228,13 @@ $stringReversa = strrev($string);
 
 echo "A palavra \"" . $string . "\" invertida é " . $stringReversa . "<br>";
 
+// Função Str_repeat
+// Serve para repetir uma string n vezes
+// Str_repeat(string, quantidade de repetições)
+
+$string = "php";
+$stringRepetida = str_repeat($string,5);
+
+echo $stringRepetida . "<br>";
+
 ?>
