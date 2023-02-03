@@ -86,9 +86,14 @@ if (Array_key_exists("profissao", $pessoa)) {
 // Retorna um boolean
 
 if (isset($pessoa["idade"])) {
-    echo "A chave existe <br>";
+    echo "A chave existe ISSET <br>";
 } else {
-    echo "A chave não existe <br>";
+    echo "A chave não existe ISSET <br>";
 }
 
+if (isset($var)) {
+    echo "A variável existe ISSET <br>";
+} else {
+    echo "A variável não existe ISSET <br>";
+}
 ?>
