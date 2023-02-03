@@ -1,8 +1,10 @@
 <?php
 
 // Objeto é um dos paradigmas da orientação orientadas a objetos
+// Objetos são entidades que possuem comportamentos e características
 // Possui métodos, propriedades, funções
 // Métodos são suas ações e propriedades as suas características
+// Métodos (Funções), Características ou Propriedades (Variáveis)
 // Objeto é considerado um tipo de dado
 
 // Objeto precisa de um 'molde', no caso, será pessoa
