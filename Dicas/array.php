@@ -79,6 +79,7 @@ echo "O array tem " . count($array) . " elementos <br>";
 // Função Array_slice
 // Serve para resgatar uma faixa de elementos do array
 // array_slice(array, onde começa a resgatar, quantos elementos quero resgatar a partir do índice passado)
+// Exemplos
 
 $array = [1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49];
 
@@ -107,6 +108,19 @@ $slice4 = array_slice($array, 7, -3); // Pegar do 29 ao 37
 
 echo "<pre>";
 print_r($slice4);
+echo "</pre>";
+
+// Função Array_chunck
+// Serve para dividir um array grande em VÁRIAS PARTES IGUAIS
+// Array_chunck(array, número de elementos que cada array terá)
+// Exemplo
+
+$array = range(1, 511, 15);
+
+$arrayDividido = array_chunk($array, 5); // Quero arrays de 5 elementos cada
+
+echo "<pre>";
+print_r($arrayDividido);
 echo "</pre>";
 
 ?>
