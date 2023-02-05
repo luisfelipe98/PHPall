@@ -31,6 +31,19 @@ echo "A multiplicação entre " . $n1 . " * " . $n2 . " = " . $multiplicacao . "
 // Divisão
 echo "A divisão entre " . $n1 . " / " . $n2 . " = " . $divisao . "<br>";
 
+// Operador de Exponenciação
+// O mesmo na matemática de dizer:
+// Um número elevado a número da quanto?
+// Operador de exponenciação: **
+
+// Exemplo
+
+$exponenciacao = $n1 ** $n2;
+
+// Exponenciação
+echo "A exponenciação entre " . $n1 . " elevado a " . $n2 . " = " . $exponenciacao . "<br>";
+
+
 /* Operadores de comparação
     Comparam resultados para saber se são verdadeiro ou falso (Retornam um booleano)
     Operador de igualdade: ==
