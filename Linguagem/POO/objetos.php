@@ -11,7 +11,7 @@
 // Isso será um classe 
     class Pessoa {
         
-        // Uma característica desta classe
+        // Um= método desta classe
         function falar(){
             echo "Olá pessoas";
         }
