@@ -178,4 +178,21 @@ echo $incre . " " . $decre . "<br>";
 echo 20 > 2 ? "Deu verdadeiro <br>" : "Deu falso <br>";
 
 echo 20 < 2 ? "Deu verdadeiro <br>" : "Deu falso <br>";
+
+// Operador de Concatenação
+// Serve para juntar strings, variáveis com texto etc
+// Operador de concatenação: .=
+
+// Exemplo
+// Pegar um array de strings e junta-lo
+
+$array = ["a", "b", "c"];
+$resultado = "";
+
+// Juntando a string
+for ($i=0; $i < count($array); $i++) {
+    $resultado .= $array[$i];
+}
+
+echo "O resultado da concatenação é " . $resultado . "<br>";
 ?>
