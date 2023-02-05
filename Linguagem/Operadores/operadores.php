@@ -1,5 +1,36 @@
 <?php
 
+/* Operadores aritméticos
+    Serve para fazer operações comuns de matemática
+    Operador de soma: +
+    Operador de subtração: -
+    Operador de multiplicação: *
+    Operador de divisão: /
+*/
+
+// Exemplos
+
+$n1 = 15;
+$n2 = 3;
+
+// Fazendo as quatro operações
+$soma = $n1 + $n2;
+$subtracao = $n1 - $n2;
+$multiplicacao = $n1 * $n2;
+$divisao = $n1 / $n2;
+
+// Soma
+echo "A soma entre " . $n1 . " + " . $n2 . " = " . $soma . "<br>";
+
+// Subtracao
+echo "A subtração entre " . $n1 . " - " . $n2 . " = " . $subtracao . "<br>";
+
+// Multiplicação
+echo "A multiplicação entre " . $n1 . " * " . $n2 . " = " . $multiplicacao . "<br>";
+
+// Divisão
+echo "A divisão entre " . $n1 . " / " . $n2 . " = " . $divisao . "<br>";
+
 /* Operadores de comparação
     Comparam resultados para saber se são verdadeiro ou falso (Retornam um booleano)
     Operador de igualdade: ==
