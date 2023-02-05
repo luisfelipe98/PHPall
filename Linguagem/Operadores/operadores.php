@@ -43,6 +43,15 @@ $exponenciacao = $n1 ** $n2;
 // Exponenciação
 echo "A exponenciação entre " . $n1 . " elevado a " . $n2 . " = " . $exponenciacao . "<br>";
 
+// O operador módulo serve para descobrir o RESTO de uma DIVISÃO
+// Operador de exponenciação: %
+
+// Exemplo
+
+$modulo = $n1 % $n2;
+
+// Módulo
+echo "O módulo entre " . $n1 . " % " . $n2 . " = " . $modulo . "<br>";
 
 /* Operadores de comparação
     Comparam resultados para saber se são verdadeiro ou falso (Retornam um booleano)
