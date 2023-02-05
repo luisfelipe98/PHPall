@@ -1,18 +1,5 @@
 <?php
 
-// Operadores de auto incremento e decremento
-// Serve para adicionar 1 ou decrementar 1
-// Muito utilizados em estruturas de repetição
-
-$incre = 0;
-$decre = 0;
-
-// Utilização dos operadores
-$incre++;
-$decre--;
-
-echo $incre . " " . $decre . "<br>";
-
 /* Operadores de comparação
     Comparam resultados para saber se são verdadeiro ou falso (Retornam um booleano)
     Operador de igualdade: ==
@@ -116,6 +103,19 @@ $n = 15;
 $n %= 10; // $n = $n % 10
 
 echo $n . "<br>";
+
+// Operadores de auto incremento e decremento
+// Serve para adicionar 1 ou decrementar 1
+// Muito utilizados em estruturas de repetição
+
+$incre = 0;
+$decre = 0;
+
+// Utilização dos operadores
+$incre++;
+$decre--;
+
+echo $incre . " " . $decre . "<br>";
 
 // Operador ternário
 // Estrutura de condição resumida
