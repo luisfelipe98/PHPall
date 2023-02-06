@@ -3,6 +3,7 @@
     // Floats são números com casas decimais
     // São representados com números com um ponto(.) no meio
     // Exemplos
+    
     echo 2.44 . "<br>";
     echo 13.78 . "<br>";
     echo -4000.78 . "<br>";

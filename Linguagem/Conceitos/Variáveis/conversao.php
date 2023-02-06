@@ -16,10 +16,18 @@ if ($a === 100) {
     echo $a . " é um Integer <br>";
 }
 
-// Agora forçando ser um int
+// Agora forçando ser um float
 $a = (float) "100";
 
 if ($a === 100.0) {
     echo $a . " é um Float <br>";
 }
+
+// Agora forçando ser string
+$a = (string) 100;
+
+if (is_string($a)) {
+    echo $a . " é String <br>"; 
+}
+
 ?>
