@@ -12,7 +12,7 @@ $numeros = [1,2,3];
 print_r($numeros);
 echo "<br>";
 
-// A exibição de um array precisa ser ultizada pelo indice
+// A exibição de um array precisa ser utilizada pelo indice
 // Exemplo:
 
 echo $numeros[0];
