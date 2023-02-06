@@ -21,4 +21,19 @@ foreach($array as $item) {
         echo $item . "<br>";
     }
 }
+echo "<br> <br> <br>";
+
+// Também podemos trabalhar com chaves e valores no foreach
+
+$array = [
+    "nome" => "Marcos",
+    "idade" => "45",
+    "profissao" => "professor" 
+];
+
+echo "Ficha do Marcos <br>";
+foreach ($array as $chave => $valor) {
+    echo $chave . ": " . $valor . "<br>";
+}
+
 ?>
