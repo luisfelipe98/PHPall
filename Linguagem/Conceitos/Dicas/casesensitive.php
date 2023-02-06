@@ -1,6 +1,5 @@
 <?php
 
-
     // Não é case sensitive
     echo "Teste <br>";
     eChO "Testando 2 <br>";
