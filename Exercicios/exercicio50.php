@@ -5,13 +5,15 @@
 
 class Cachorro {
 
-    private $pernas;
     private $nome;
+    private $genero; 
     private $raca;
     private $cor;
+    private $pernas;
 
-    function __construct ($nome, $raca, $cor, $pernas) {
+    function __construct ($nome, $genero, $raca, $cor, $pernas) {
         $this->nome = $nome;
+        $this->genero = $genero;
         $this->raca = $raca;
         $this->cor = $cor;
         $this->pernas = $pernas;
@@ -19,6 +21,14 @@ class Cachorro {
 
     public function getNome() {
         return $this->nome;
+    }
+
+    public function getGenero() {
+        if ($this->genero === "M" || $this->genero === "m") {
+            return "Macho";
+        } else {
+            return "Fêmea";
+        }
     }
 
     public function getRaca() {
@@ -35,35 +45,59 @@ class Cachorro {
 
 }
 
-$cachorro = new Cachorro("Zeca", "Spitz Alemão", "Branco", 4);
+$cachorro = new Cachorro("Zeca", "M", "Spitz Alemão", "Branco", 4);
 
-echo "Ficha do cachorro: <br>";
+if ($cachorro->getGenero() === "Macho") {
+    echo "Ficha do cachorro: <br>";
+} else {
+    echo "Ficha da cadela: <br>";
+}
+
 echo "Nome: " . $cachorro->getNome() . "<br>";
 echo "Raça: " . $cachorro->getRaca() . "<br>";
+echo "Gênero: " . $cachorro->getGenero() . "<br>";
 echo "Cor: " . $cachorro->getCor() . "<br>";
 echo "Pernas: " . $cachorro->getPernas() ."<br> <br>";
 
-$cachorro = new Cachorro("Grafite", "Labrador", "Preto", 4);
+$cachorro = new Cachorro("Grafite", "m", "Labrador", "Preto", 4);
 
-echo "Ficha do cachorro: <br>";
+if ($cachorro->getGenero() === "Macho") {
+    echo "Ficha do cachorro: <br>";
+} else {
+    echo "Ficha da cadela: <br>";
+}
+
 echo "Nome: " . $cachorro->getNome() . "<br>";
 echo "Raça: " . $cachorro->getRaca() . "<br>";
+echo "Gênero: " . $cachorro->getGenero() . "<br>";
 echo "Cor: " . $cachorro->getCor() . "<br>";
 echo "Pernas: " . $cachorro->getPernas() ."<br> <br>";
 
-$cachorro = new Cachorro("Beatriz", "Spitz Alemão", "Marrom", 4);
+$cachorro = new Cachorro("Beatriz", "F", "Spitz Alemão", "Marrom", 4);
 
-echo "Ficha do cachorro: <br>";
+if ($cachorro->getGenero() === "Macho") {
+    echo "Ficha do cachorro: <br>";
+} else {
+    echo "Ficha da cadela: <br>";
+}
+
 echo "Nome: " . $cachorro->getNome() . "<br>";
 echo "Raça: " . $cachorro->getRaca() . "<br>";
+echo "Gênero: " . $cachorro->getGenero() . "<br>";
 echo "Cor: " . $cachorro->getCor() . "<br>";
 echo "Pernas: " . $cachorro->getPernas() ."<br> <br>";
 
-$cachorro = new Cachorro("Bingo", "Golden Retriever", "Amarelo", 4);
+$cachorro = new Cachorro("Bingo", "m", "Golden Retriever", "Amarelo", 4);
 
-echo "Ficha do cachorro: <br>";
+if ($cachorro->getGenero() === "Macho") {
+    echo "Ficha do cachorro: <br>";
+} else {
+    echo "Ficha da cadela: <br>";
+}
+
 echo "Nome: " . $cachorro->getNome() . "<br>";
 echo "Raça: " . $cachorro->getRaca() . "<br>";
+echo "Gênero: " . $cachorro->getGenero() . "<br>";
 echo "Cor: " . $cachorro->getCor() . "<br>";
 echo "Pernas: " . $cachorro->getPernas() ."<br> <br>";
 
